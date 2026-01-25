@@ -8,19 +8,19 @@ TURNSTILE_SECRET = "1x00000000000000000000AA"
 ALERT_WEBHOOK = ""
 ENVIRONMENT = "development"
 
-# KV namespaces - DISABLED: Create first with 'wrangler kv namespace create'
-# [[kv_namespaces]]
-# binding = "SESSIONS"
-# id = "00000000000000000000000000000000"
+# KV namespaces
+[[kv_namespaces]]
+binding = "SESSIONS"
+id = "89091567f28a43449afe6b93ab9816bc"
 
-# [[kv_namespaces]]
-# binding = "METRICS"
-# id = "00000000000000000000000000000001"
+[[kv_namespaces]]
+binding = "METRICS"
+id = "f43220bb3724436e9c1a8963b672894b"
 
-# [[kv_namespaces]]
-# binding = "RATE_LIMITS"
-# id = "00000000000000000000000000000002"
+[[kv_namespaces]]
+binding = "RATE_LIMITS"
+id = "ab328305a3184071907b7572fe28c23e"
 
-# [[kv_namespaces]]
-# binding = "USERS"
-# id = "00000000000000000000000000000003"
+[[kv_namespaces]]
+binding = "USERS"
+id = "7fece0bb027b480084eaf6c062527d14"
