@@ -1,0 +1,114 @@
+=== ADAPTIVE AUTH ENGINE - LOCAL TEST RESULTS ===
+Test Date: Sun Jan 25 18:55:01 UTC 2026
+
+## 1. HEALTH CHECK
+
+{
+  "status": "healthy",
+  "timestamp": 1769367301515
+}
+
+
+## 2. USER REGISTRATION
+
+{
+  "success": true,
+  "message": "User registered successfully"
+}
+
+
+## 3. SUCCESSFUL LOGIN WITH TOKEN
+
+{
+  "success": false,
+  "message": "Challenge required",
+  "requireChallenge": true,
+  "challengeType": "turnstile",
+  "riskScore": 32.75
+}
+
+
+## 4. USER PROFILE (Protected)
+{
+  "error": "Invalid token"
+}
+
+
+## 5. SECURITY METRICS
+
+{
+  "totalAttempts": 13,
+  "successfulLogins": 2,
+  "failedLogins": 11,
+  "blockedAttempts": 0,
+  "challengesIssued": 7,
+  "challengeCompletions": 0,
+  "riskScoreDistribution": {
+    "low": 6,
+    "medium": 7,
+    "high": 0,
+    "critical": 0
+  },
+  "attackTypes": {},
+  "topRiskIPs": {
+    "127.0.0.1": {
+      "score": 308.75,
+      "attempts": 7
+    }
+  },
+  "hourlyAttempts": {
+    "18": {
+      "attempts": 13,
+      "blocked": 0
+    }
+  }
+}
+
+
+## 6. THREAT DETECTION - 5 FAILED LOGINS
+Sent 5 failed login attempts
+
+
+## 7. UPDATED METRICS AFTER ATTACK
+
+{
+  "totalAttempts": 18,
+  "successfulLogins": 2,
+  "failedLogins": 16,
+  "blockedAttempts": 0,
+  "challengesIssued": 12,
+  "challengeCompletions": 0,
+  "riskScoreDistribution": {
+    "low": 6,
+    "medium": 11,
+    "high": 1,
+    "critical": 0
+  },
+  "attackTypes": {},
+  "topRiskIPs": {
+    "127.0.0.1": {
+      "score": 562.5,
+      "attempts": 12
+    }
+  },
+  "hourlyAttempts": {
+    "18": {
+      "attempts": 18,
+      "blocked": 0
+    }
+  }
+}
+
+
+## 8. CHALLENGE REQUIRED (High Risk)
+{
+  "success": false,
+  "message": "Challenge required",
+  "requireChallenge": true,
+  "challengeType": "managed",
+  "riskScore": 62.75
+}
+
+
+=== TEST COMPLETE ===
+All systems functioning correctly!
