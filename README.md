@@ -342,3 +342,9 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## 📧 Support
 
 For issues and questions, please open an issue on GitHub.
+
+---
+
+<p align="center">
+  <sub>Created with love by <a href="https://abejar.net"><strong>Abejar DevSec Team</strong></a></sub>
+</p>
