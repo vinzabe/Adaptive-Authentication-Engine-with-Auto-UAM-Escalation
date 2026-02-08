@@ -279,9 +279,7 @@ This project demonstrates:
 
 ## 🔐 Repository Access
 
-**Private Repository**: https://github.com/vinzabe/Adaptive-Authentication-Engine-with-Auto-UAM-Escalation
-
-Access via: `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`
+**Repository**: https://github.com/vinzabe/Adaptive-Authentication-Engine-with-Auto-UAM-Escalation
 
 ---
 
